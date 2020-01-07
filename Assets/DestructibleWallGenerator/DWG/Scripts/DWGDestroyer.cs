@@ -5,7 +5,7 @@ public class DWGDestroyer : MonoBehaviour {
 
 	public float radius = 2;
 	
-	void OnCollisionEnter(Collision col){
+	void OnTriggerEnter(Collider col){
         if (col.gameObject.CompareTag("Destructible"))
         {
             ExplodeForce();
